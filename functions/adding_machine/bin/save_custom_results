@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+import argparse
+from adding_machine import agg_locations as al
+
+# Parse arguments
+parser = argparse.ArgumentParser(description="""
+    Aggregate draws up a location hierarchy and upload to the epi db""")
+parser.add_argument(
+    'meid', type=int, help='modelable_entity_id to be uploaded')
+parser.add_argument(
+    'description', type=str, help='upload description')
+parser.add_argument(
+    'input_dir', type=str, help='input directory where draws are saved')
+parser.add_argument(
+    '--years', type=int, nargs='*', help='years to upload',
+    default=[1990, 1995, 2000, 2005, 2010, 2015])
+parser.add_argument(
+    '--sexes', type=int, nargs='*', help='sexes to upload', default=[1, 2])
+parser.add_argument(
+    '-b', '--best', help='mark the uploaded model as "best"',
+    action='store_true')
+parser.add_argument(
+    '-c', '--counts',
+    help='values are in count space instead of the default rate space',
+    action='store_true')
+parser.add_argument(
+    '-fp', '--file_pattern',
+    type=str,
+    help=(
+        'string specifying the general pattern used in draw filenames, '
+        'where special idenifying fields (e.g. location_id, or sex_id) '
+        'are enclosed in curly braces {}. For example, a valid file '
+        'pattern might be: {location_id}_{year_id}_{sex_id}.csv. Note '
+        'that if you are using h5 files, you will also need to specify '
+        'an h5_tablename'))
+parser.add_argument(
+    '--h5_tablename',
+    type=str,
+    help=(
+        'string specifying the table name if the custom file format '
+        'specified uses hdf files.'))
+parser.add_argument(
+    '-e', '--env',
+    type=str,
+    help='dev/prod environment',
+    default='prod')
+args = parser.parse_args()
+
+# Run save results
+al.save_custom_results(
+        args.meid,
+        args.description,
+        args.input_dir,
+        args.years,
+        args.sexes,
+        mark_best=args.best,
+        in_counts=args.counts,
+        env=args.env,
+        custom_file_pattern=args.file_pattern,
+        h5_tablename=args.h5_tablename)

@@ -1,0 +1,159 @@
+gbd2013_cause,condition,icd9cm
+_inj_amputation_finger,Amputation of finger(s) (with or without thumb or toe),"885, 886, 895"
+_inj_burns,Burns,"940, 941, 942, 943, 944, 945, 946, 947, 948, 949"
+_inj_chest,Severe chest injury,"860, 861, 862, 874, 901, 908"
+_inj_dislocation,Long term outcome of dislocation of hip/knee/shoulder,"831, 835, 836, 844"
+_inj_emergency,Injury Requiring Emergency Care,"863, 864, 865, 866, 867, 868, 869, 902"
+_inj_fracture_arm,Fracture of radius or ulna,813
+_inj_fracture_extr,"Fracture of wrist and other distal part of hand, fracture of foot except ankle","814, 815, 816, 817, 818, 819, 827"
+_inj_fracture_femur,Fracture of femur,821
+_inj_fracture_head,"Fracture of clavicle, scapula, humerus, or skull","800, 801, 803, 810, 811, 812"
+_inj_fracture_hip,Fracture of Hip,820
+_inj_fracture_leg,"Fracture of patella, tibia, fibula, or ankle","822, 823, 824"
+_inj_fracture_pelvis,Fracture of pelvis,"808, 809"
+_inj_fracture_rib,"Fracture of sternum, rib, or face bone","802, 807, 825, 826"
+_inj_fracture_spine,Fracture of vertebral column,805
+_inj_head,Head Injury,"804, 850, 851, 852, 853, 854, 905"
+_inj_nerves,Injured nerves,"951, 953, 954, 955, 956, 957"
+_inj_openwound,"Open wound, superficial injuries and dislocations","830, 832, 833, 834, 837, 838, 839, 840, 841, 842, 843, 845, 846, 847, 848, 870, 871, 872, 873, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 890, 891, 892, 893, 894, 900, 903, 904, 906, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920,"
+_inj_spinal_lesion,Spinal Cord Lesion,"806, 952"
+_inj_urgent,Injury Requiring Urgent Care,"925, 926, 927, 928, 929, 935, 936, 937, 938, 939, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 992, 993, 994, 995, 996, 997, 998, 999"
+_na_allergic_rhinitis,Allergic rhinitis,477
+_na_anemias,Hemolytic anemias,"282, 283, 284, 285"
+_na_candidiasis,Candidiasis,112
+_na_cerebral_palsy,Cerebral palsy,343
+_na_digest_reflux,Gastroesophageal reflux disease,530
+_na_garbage,Garbage Coded Injury,"828, 829, 909, 958, 959"
+_na_hearing,Hearing loss not due to other diseases or injuries,"385, 387, 389"
+_na_hepatitis,Hepatitis,70
+_na_mental_drug,Drug use disorders,"292, 304, 305"
+_na_neo_other_ben,Other neoplasms,"210, 211, 212, 213, 214, 215, 216, 217, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 236, 237, 238, 239"
+_na_neo_otherskin,Non-melanoma skin cancer,173
+_na_neo_unspec,Unspecified cancer site,"149, 159, 165, 179, 183, 195, 199, 235"
+_na_neonatal_all,Neonatal conditions,"760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779"
+_na_osteomyelitis,Osteomyelitis,730
+_na_other_unspec,Unspecified  symptoms,"780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799"
+_na_pelvic_inflam,Pelvic inflamamtory disease,"614, 615"
+_na_polio,Poliomyelitis,138
+_na_pulmonary_heart,Pulmonary heart disease,"415, 416, 417"
+_na_sinusitis,Chronic sinusitis,473
+_na_std_herpess,Herpes simplex,54
+_na_std_herpesz,Herpes zoster,53
+_na_vision_other,Other vision loss,"361, 362, 363, 364, 369"
+cirrhosis,Cirrhosis of the liver,"570, 571"
+ckd,Chronic kidney diseases,"581, 582, 583, 584, 585, 586, 587, 588, 589"
+ckd_htn,CKD due to hypertension,403
+cong_chromo,Other chromosomal abnormalities,758
+cong_cleft,Cleft lip and cleft palate,749
+cong_heart,Congenital heart anomalies,"745, 746, 747"
+cong_neural,Neural tube defects,"740, 741"
+cong_other,Other congenital anomalies,"742, 743, 744, 748, 750, 751, 752, 753, 754, 755, 756, 757, 759"
+cvd_afib,Atrial fibrillation and flutter,427
+cvd_ami,Myocardial infarction,410
+cvd_cmp,Cardiomyopathy and myocarditis,"422, 425"
+cvd_hf,Any heart failure,428
+cvd_htn,Hypertensive heart disease,"402, 404"
+cvd_ihd_angina,Angina pectoris,413
+cvd_other,Other circulatory diseases,"420, 423, 424, 426, 429, 441, 442, 444, 446, 447, 448, 451, 453, 454, 455, 456, 457, 458, 459"
+cvd_pvd,Peripheral vascular disease,440
+cvd_rhd,Rheumatic heart disease,"390, 391, 392, 393, 394, 395, 396, 397, 398"
+cvd_stroke,Cerebrovascular disease,"342, 430, 431, 432, 433, 434, 435, 436, 437, 438"
+diabetes,Diabetes mellitus,250
+digest_bile,Gall bladder and bile duct disease,"574, 575, 576"
+digest_gastrititis,Gastritis and duodenitis,535
+digest_hernia,Inguinal/femoral hernia,550
+digest_ibd,Noninfective inflammatory bowel disease,"555, 556, 558"
+digest_other,Other digestive diseases,"536, 537, 543, 551, 552, 553, 562, 564, 565, 566, 569, 572, 573, 578, 579"
+digest_pancreatitis,Pancreatitis,577
+digest_pud,Peptic ulcer disease,"531, 532, 533, 534"
+digest_vascular,Vascular insufficiency of intestine,557
+endo,"Other Endocrine, nutritional, blood and immune disorders ","251, 252, 253, 254, 255, 256, 257, 258, 259, 270, 271, 273, 277, 279, 286, 287, 288, 289, 242, 243, 244, 245, 246"
+gyne_endometr,Endometriosis,617
+gyne_femaleinfert,Infertility (female),628
+gyne_fibroids,Fibroids,218
+gyne_other,Other gynecological disorders,"610, 611, 620, 621, 622, 623, 624, 625, 626, 629"
+gyne_prolapse,Genital prolapse,618
+hiv_other,HIV/AIDS,42
+maternal_htn,Hypertensive disorders of pregnancy,642
+maternal_other,Other maternal conditions,"643, 644, 645, 646, 647, 648, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 661, 662, 663, 664, 665, 667, 668, 669, 671, 672, 673, 674, 675, 676, 677"
+meningitis,Meningitis and encephalitis,"36, 48, 49, 62, 63, 64, 320, 321, 322, 323"
+mental_adhd,ADHD,314
+mental_alcohol,Alcohol use disorders,"291, 303"
+mental_anxiety,Anxiety disorders,"300, 308"
+mental_bipolar,Bipolar affective disorder,296
+mental_conduct,Conduct disorder,312
+mental_id,Intellectual disability,"317, 318, 319"
+mental_other,Other mental and behavioral disorders,"301, 302, 306, 307, 309, 310, 313, 315, 316"
+mental_schizo,Schizophrenia,"293, 294, 297, 298, 299, 295"
+mental_unipolar_mdd,Unipolar depressive disorders,311
+msk_gout,Gout,274
+msk_osteoarthritis,Osteoarthritis,715
+msk_other,Other musculoskeletal disorders,"710, 711, 712, 713, 716, 717, 718, 719, 720, 725, 726, 727, 728, 729, 731, 732, 733, 734, 735, 736, 737, 738, 739"
+msk_pain_lowback_noleg,Back pain,"721, 724"
+msk_pain_lowback_wleg,Intervertebral disk disorders,722
+msk_pain_neck,Neck pain,723
+msk_rheumarthritis,Rheumatoid arthritis,714
+neo_bladder,Bladder cancer,188
+neo_brain,Brain and nervous system cancers,"191, 192"
+neo_breast,Breast cancer,"174, 175"
+neo_cervical,Cervix uteri cancer,180
+neo_colorectal,Colon and rectum cancers,"153, 154"
+neo_esophageal,Oesophagus cancer,150
+neo_hodgkins,Hodgkin's disease,201
+neo_kidney,Kidney and other urinary organ cancers,189
+neo_larynx,Larynx cancer,161
+neo_leukemia,Leukemia,"204, 205, 206, 207, 208"
+neo_liver,Liver cancer,155
+neo_lung,"Trachea, bronchus and lung cancers",162
+neo_lymphoma,Non-Hodgkin's lymphoma,202
+neo_melanoma,Malignant melanoma of skin,172
+neo_mouth,Mouth cancer,"140, 141, 142, 143, 144, 145, 146"
+neo_myeloma,Multiple myeloma,203
+neo_other,Other malignant neoplasms,"152, 158, 160, 163, 164, 170, 171, 176, 181, 184, 187, 190, 194, 196, 197, 198, 200"
+neo_pancreas,Pancreas cancer,157
+neo_prostate,Prostate cancer,185
+neo_stomach,Stomach cancer,151
+neo_testicular,Testis cancer,186
+neo_thyroid,Thyroid cancer,193
+neo_uterine,Corpus uteri cancer,182
+neuro_dementia,Alzheimer's disease and other dementias,"290, 330, 331"
+neuro_epilepsy,Epilepsy,345
+neuro_migraine,Migraine,346
+neuro_ms,Multiple sclerosis,340
+neuro_other,Other neurological conditions,"324, 325, 326, 333, 334, 335, 336, 337, 341, 344, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359"
+neuro_parkinsons,Parkinson's disease,332
+nutrition_iodine,Goitre and Hypothyroidism,"240, 241"
+nutrition_iron,Iron-deficiency anemia,"280, 281"
+nutrition_other,Other nutritional disorders,"265, 266, 267, 268, 269"
+nutrition_pem,Protein-energy malnutrition,"260, 261, 262, 263"
+oral_other,Other oral,"520, 522, 524, 526, 527, 528, 529"
+oral_caries_perio,Perio and caries,"521, 523, 525"
+otitis,Otitis media,"381, 382, 383"
+resp_asthma,Asthma,493
+resp_copd,Chronic obstructive pulmonary disease (COPD),"490, 491, 492, 494, 496, 513, 515, 516"
+resp_interstitial,Sarcoidosis,135
+resp_other,Other respiratory diseases,"470, 471, 478, 495, 508, 510, 511, 512, 517, 518, 519"
+resp_pneum_other,Pneumonoconiosis,"500, 501, 502, 503, 504, 505, 506"
+sense_cataract,Cataracts,366
+sense_glaucoma,Glaucoma,365
+sense_other,Other sense organ disorders,"360, 370, 371, 372, 373, 374, 375, 376, 377, 379, 380, 384, 386, 388"
+sense_refraction,Refraction and accommodation disorders,"367, 368, 378"
+skin_acne,Acne,706
+skin_alopecia,Alopecia,704
+skin_bacterial_abs_cell,Bacterial skin infection (abscess and cellulitis),"35, 680, 683, 686, 134, 681, 682"
+skin_bacterial_impetigo,Bacterial skin infection (impetigo),684
+skin_decubitus,Skin ulcer,707
+skin_eczema,Dermatitis (eczema),"690, 691, 692"
+skin_fungal,Dermatophytosis,"110, 111"
+skin_other,Residual skin conditions,"132, 685, 694, 695, 697, 700, 701, 702, 703, 705, 709"
+skin_pruritus,Pruritus,698
+skin_psoriasis,Psoriasis,696
+skin_scabies,Scabies,133
+skin_urticaria,Urticaria,708
+skin_viral,Viral wart,78
+tb,Tuberculosis,"10, 11, 12, 13, 14, 15, 16, 17, 18, 137"
+urinary_bph,Hyperplasia of prostate,600
+urinary_nephritis,"Acute tubulointerstitial nephritis , pyelonephritis and  Urinary tract infections","590, 595, 597"
+urinary_other,Other urinary diseases,"591, 593, 596, 598, 599, 601, 602, 603, 604, 605, 606, 607, 608"
+urinary_urolithiasis,Urolithiasis,"592, 594"
+varicella,Varicella (chickenpox),52

@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+from jobmon import sge
+import argparse
+from hierarchies import dbtrees
+
+parser = argparse.ArgumentParser(description="""
+    Submit jobs for summarizing draws by location-measure""")
+parser.add_argument(
+    'como_version_id', type=int, help='como version id')
+parser.add_argument(
+    '--env',
+    type=str,
+    default='dev',
+    help='dev/prod environment')
+args = parser.parse_args()
+
+lt = dbtrees.loctree(None, 35)
+sdi_lts = dbtrees.loctree(None, 40, return_many=True)
+jids = []
+locs = [l.id for l in lt.nodes]
+locs.extend([l.root.id for l in sdi_lts])
+for l in locs:
+    for id_type in ['sequela', 'cause', 'rei']:
+        if id_type == 'cause':
+            durs = ['acute', 'chronic', 'total']
+        else:
+            durs = ['total']
+        for dur in durs:
+            runscript = "summ_loc"
+            jid = sge.qsub(
+                runscript,
+                "como_summ_{l}_{t}_{d}".format(l=l, t=id_type, d=dur),
+                parameters=[args.como_version_id, l, id_type, dur],
+                slots=32,
+                memory=65,
+                conda_env='como',
+                project='proj_como',
+                jobtype=None,
+                intel_only=True)
+            jids.append(jid)
+
+runscript = "upload"
+for it in ['cause', 'sequela', 'rei']:
+    sge.qsub(
+        runscript,
+        "como_upload_%s" % it[0],
+        parameters=[args.como_version_id, it],
+        conda_env='como',
+        project='proj_como',
+        jobtype=None,
+        slots=10,
+        memory=15,
+        holds=jids,
+        intel_only=True)

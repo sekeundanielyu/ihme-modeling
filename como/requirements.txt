@@ -1,0 +1,1 @@
+git+ssh://git@stash.ihme.washington.edu:7999/cc/hierarchies.git@master

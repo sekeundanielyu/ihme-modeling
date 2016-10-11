@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+import argparse
+from como import simulate
+
+parser = argparse.ArgumentParser(description="""
+    Run comorbidity simulation for a given country-year-sex combination""")
+parser.add_argument(
+    'como_version_id', type=int, help='como version id')
+parser.add_argument(
+    'location_id', type=int, help='modelable_entity_id to be uploaded')
+parser.add_argument(
+    'year_id', type=int, help='upload description')
+parser.add_argument(
+    'sex_id', type=int, help='input directory where draws are saved')
+parser.add_argument(
+    '--env',
+    type=str,
+    default='dev',
+    help='dev/prod environment')
+args = parser.parse_args()
+simulate.main_parallel(
+        args.como_version_id, args.location_id, args.year_id, args.sex_id,
+        args.env)

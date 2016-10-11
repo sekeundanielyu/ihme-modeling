@@ -1,0 +1,22 @@
+quietly do strPath/functions/save_results.do
+
+save_results, modelable_entity_id(9575) description("heart failure due to other circ diseases; best models 08/1") in_dir("strPath/valvu") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9576) description("heart failure due to thalassemias; best models 08/1") in_dir("strPath/thalass") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9577) description("heart failure due to G6PD; best models 08/1") in_dir("strPath/g6pd") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9578) description("heart failure due to other anemias; best models 08/1") in_dir("strPath/other_anemia") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9579) description("heart failure due to other combined; best models 08/1") in_dir("strPath/other_combo") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9580) description("heart failure due to congenital; best models 08/1") in_dir("strPath/congenital") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9581) description("heart failure due to iodine deficiency; best models 08/1") in_dir("strPath/iodine") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9582) description("heart failure due to anemia; best models 08/1") in_dir("strPath/anemia") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9583) description("heart failure due to RHD; best models 08/1") in_dir("strPath/rhd") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9584) description("heart failure due to CMP; best models 08/1") in_dir("strPath/cmp") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9585) description("heart failure due to endocarditis; best models 08/1") in_dir("strPath/endo") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9571) description("pneumo silicosis; best models 08/1") in_dir("strPath/pneum_other/silicosis") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9572) description("pneumo asbestosis; best models 08/1") in_dir("strPath/pneum_other/asbestosis") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9573) description("pneumo coal workerers; best models 08/1") in_dir("strPath/pneum_other/coalworker") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9574) description("pneumo other; best models 08/1") in_dir("strPath/pneum_other/other") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9567) description("heart failure due to IHD; best models 08/1") in_dir("strPath/ihd") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9568) description("heart failure due to HTN; best models 08/1") in_dir("strPath/htn") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9569) description("heart failure due to COPD; best models 08/1") in_dir("strPath/copd") metrics(5) mark_best(yes)
+save_results, modelable_entity_id(9570) description("heart failure due to interstitial lung disease; best models 08/1") in_dir("strPath/interstitial") metrics(5) mark_best(yes)
+

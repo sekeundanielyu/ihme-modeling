@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+from como.gini import mix_dists
+import argparse
+
+
+parser = argparse.ArgumentParser(description="""
+    Summarize draws for a given location""")
+parser.add_argument(
+    'como_version_id', type=int, help='como version id')
+parser.add_argument(
+    'location_id', type=int, help='location_id')
+args = parser.parse_args()
+
+mix_dists.write_agg_files(args.location_id, args.como_version_id)

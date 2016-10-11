@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import argparse
+from adding_machine import agg_locations as al
+
+# Parse arguments
+parser = argparse.ArgumentParser(description="""
+    Aggregate draws for a given model_version_id
+    up a location hierarchy and upload to the epi db""")
+parser.add_argument(
+    'mvid',
+    type=int,
+    help='modelable_entity_id to be uploaded')
+parser.add_argument(
+    '--env', '-e',
+    type=str,
+    help='dev/prod environment',
+    default='dev')
+parser.add_argument(
+    '--mark_best', '-b',
+    help='mark model as best automatically',
+    action='store_true')
+parser.add_argument(
+    '--best_description',
+    type=str,
+    help='description for best model',
+    default='auto-marked as best')
+args = parser.parse_args()
+
+al.aggregate_mvid(args.mvid, args.env, mark_best=args.mark_best,
+                  best_description=args.best_description)

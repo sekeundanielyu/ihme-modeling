@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+from jobmon import sge
+import pandas as pd
+import sys
+from adding_machine import db
+
+env = sys.argv[1]
+edb = db.EpiDB()
+eng = edb.get_engine('epi')
+q = "SELECT * FROM severity_splits.hierarchy_version WHERE is_best=1"
+hvs = pd.read_sql(q, eng)
+
+runscript = "split_me"
+for pmeid in hvs.parent_meid:
+    sge.qsub(
+            runscript,
+            "sp_%s" % pmeid,
+            parameters=[pmeid, env],
+            slots=40,
+            memory=80,
+            conda_env='adding_machine',
+            project='proj_como',
+            jobtype=None)

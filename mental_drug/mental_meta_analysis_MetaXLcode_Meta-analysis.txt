@@ -1,0 +1,29 @@
+**Meta-analyses for mental_ and drugs_ were conducted using MetaXL
+MetaXL is an add-in for meta-analysis in Microsoft Excel for Windows. 
+Output is in table and graphical formats
+MetaXL can be downloaded from http://www.epigear.com/index_files/metaxl.html
+User guide can be downloaded from www.epigear.com/index_files/MetaXL%20User%20Guide.pdf;
+
+**Data set-up:
+Columns are Study name, Total sample size, Level of disagregation 1 (e.g. mild) number of cases, disagregation 2 (e.g. moderate) number of cases, disagregation 3 (e.g. severe) number of cases;
+Rows are the study-specific data-points for meta-analysis;
+
+
+**MetaXL codes;
+Input data for meta-analysis, random effects model:
+=MAInputTable("Random effects","Prev","RE",<data rows>)
+
+Pooled prevalence:
+=MAPooledEffect(<MAInputTable>)
+
+Pooled lower confidence intervals:
+=MAPooledEffectLCI(<MAInputTable>)
+
+Pooled higher confidence intervals:
+=MAPooledEffectHCI(<MAInputTable>)
+
+Cochran's Q:
+=MACochranQ(<MAInputTable>)
+
+I^2 statistic:
+=MAISquare(<MAInputTable>)
