@@ -1,5 +1,0 @@
-// Converting incidence to prevalence data for an acute condition takes the formula:
-
-Prevalence = incidence * duration (years)
-
-// Data are transformed using this expression.
